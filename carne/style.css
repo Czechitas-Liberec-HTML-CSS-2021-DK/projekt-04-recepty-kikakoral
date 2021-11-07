@@ -20,7 +20,68 @@ středně široké obrazovky:
 
 body {
     margin: 0;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Sans Pro';
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.recept {
+    background-size: cover;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
+
+.kontejner {
+    display:flex;
+    flex-direction: column;
+}
+
+.detail {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+.hlavni_recept {
+    background-color: aquamarine;
+    min-height: 200px;
+    padding: 0.5rem;
+}
+
+.burger {
+    background-image: url("./images/burger.jpg");
+}
+
+.maly_kontejner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.maly_recept {
+    width: 100%;
+    background-color: brown;
+    min-height: 90px;
+    padding: 0.5rem;
+}
+
+.sushi {
+    background-image: url("./images/sushi.jpg");
+}
+
+.chili {
+ background-image: url(./images/rajcata.jpg);
+}
+
+
+.kure {
+background-image: url(./images/kure.jpg);
+}
+
+
+.gril {
+background-image: url(./images/grilovani.jpg);
 }
 
 .paticka {
@@ -32,6 +93,62 @@ body {
 .paticka a {
     color: silver;
 }
+
+h1 {
+    font-weight: 800;
+    font-size: 1.75rem;
+    margin:0;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+@media only screen and (min-width: 480px) {
+    h1 { 
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    .hlavni_recept {
+        min-height: 250px;
+        padding: 1.25rem;
+    }
+    .maly_recept {
+        min-height: 150px;
+        padding: 1.25rem;
+        width: 50%;
+    }
+    .maly_kontejner {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: 860px) {
+    h1 { 
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 1.75rem;
+    }
+    .hlavni_recept {
+        min-height: 400px;
+        padding: 1.25rem;
+    }
+    .maly_recept {
+        min-height: 200px;
+        padding: 1.25rem;
+    }
+    .kontejner {
+        flex-direction: row;
+    }
+}
+
+
 
 
 /* ------------------------------- */
